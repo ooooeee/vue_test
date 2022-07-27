@@ -1,6 +1,21 @@
 import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
+import App from './App'
+import '/assets/style.scss'
+import components from "@/components/UI";
+import router from "@/router/router"
+import Vintersection from '@/directives/Vintersection'
+import derectives from '@/directives'
+console.log(components)
 
-createApp(App).use(store).use(router).mount('#app')
+const app = createApp(App);
+
+components.forEach(component => {
+    app.component(component.name, component)
+})
+derectives.forEach(derective => {
+    app.directive(derective.name, derective)
+})
+
+app
+    .use(router) 
+    .mount('#app')
