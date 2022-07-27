@@ -9,7 +9,7 @@
     @click="reverseMessage"
     >
     Перевернуть сообщение
-    </button>
+    </button> 
     </div>
 </template>
 
