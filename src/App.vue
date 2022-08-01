@@ -4,12 +4,12 @@
         <router-view></router-view>
     </div>
     <div>
-    <p>{{ message }}</p>
+    <!-- <p>{{ message }}</p>
     <button
     @click="reverseMessage"
     >
     Перевернуть сообщение
-    </button> 
+    </button>  -->
     </div>
 </template>
 
@@ -22,7 +22,7 @@ export default {
     },
     data () {
         return {
-             message: 'Привет, Vue!'
+            //  message: 'Привет, Vue!'
         }
     },
     methods: {
